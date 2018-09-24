@@ -15,6 +15,7 @@ namespace TestIT
         {
             string connString=  @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\robgallagher\source\repos\RestWebService\EmployeeDataBase\Company.mdf;Integrated Security=True;Connect Timeout=30";
             DAL.DAL dal = new DAL.DAL(connString);
+
            
             int employeeCode = Convert.ToInt16(args[0]);
             Console.WriteLine("My code is: " + employeeCode + "<br>");
